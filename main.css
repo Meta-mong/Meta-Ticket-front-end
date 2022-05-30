@@ -1,5 +1,12 @@
+a {
+  text-decoration: none;
+}
 
-body,main,.header-top-ul {
+.main{
+  min-width: 1058px;
+}
+
+body,.main,.header-top-ul {
     margin: 0;
     padding: 0;
 }
