@@ -5,8 +5,11 @@
     <title>메인 페이지</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
 <body>
+  
     <div class="main">
         <div class="header">
             <div class="header-top">
@@ -70,7 +73,39 @@
         </div>
 
         <div class="block" style="min-height: 100vh;">
-          <p>main block</p>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="img/metamong.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/metamong.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                  <img src="img/metamong.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                  <img src="img/metamong.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/metamong.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/metamong.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/metamong.png" alt="">
+              </div>
+        
+            </div>
+                <div class="swiper-button-prev"><span class="arrow circle left"></span></div> <!-- 이전 페이지 -->
+            <div class="swiper-button-next"><span class="arrow circle right"></span></div> <!-- 다음 페이지 -->
+            <div class="swiper-pagination"></div>
+        
+          </div>
+          <div class="ticket-open">
+
+          </div>
         </div>  
 
         <div class="footer">
@@ -94,5 +129,7 @@
         </div>
         
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>

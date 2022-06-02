@@ -224,8 +224,125 @@ body,.main,.header-top-ul {
 }
 /* header end*/
 
+/* main block */
 
+/* slider */
+.swiper-container {
+  overflow: hidden;
+  margin: 40px 0;
+}
 
+.swiper-slide > img {
+  width: 200px;
+  height: 300px;
+}
+
+:root {
+  --swiper-navigation-size: white !important;
+  --swiper-theme-color: none !important;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 20% !important;
+  right: auto;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 20% !important;
+  left: auto;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: none !important;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+  content: none !important;
+}
+
+/* slider arrow */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.arrow {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+}
+.arrow::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+.arrow.left::before {
+  transform: rotate(-135deg);
+  margin: -15px 0 0 -10px;
+}
+.arrow.up::before {
+  transform: rotate(-45deg);
+  margin: -10px 0 0 -15px;
+}
+.arrow.down::before {
+  transform: rotate(135deg);
+  margin: -20px 0 0 -15px;
+}
+.arrow.right::before {
+  transform: rotate(45deg);
+  margin: -15px 0 0 -20px;
+}
+.arrow::after {
+  content: '';
+  display: block;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-color: #ffffff;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+.arrow.left::after {
+  width: 40px;
+  height: 0;
+  border-width: 2px 0 0 0;
+  transform: translate(-14px, -1px);
+}
+.arrow.up::after {
+  width: 0;
+  height: 40px;
+  border-width: 0 2px 0 0;
+  transform: translate(-1px, -14px);
+}
+.arrow.down::after {
+  width: 0;
+  height: 40px;
+  border-width: 0 2px 0 0;
+  transform: translate(-1px, -26px);
+}
+.arrow.right::after {
+  width: 40px;
+  height: 0;
+  border-width: 2px 0 0 0;
+  transform: translate(-26px, -1px);
+}
+.arrow.circle {
+  background: rgb(0, 0, 0);
+  border-radius: 50px;
+  opacity: 0.5;
+}
+
+/* slider arrow end */
+
+/* main block end */
 
 /* footer */
 .footer {
@@ -246,6 +363,7 @@ body,.main,.header-top-ul {
 /* footer social-icons */
 .social-icons a
 {
+  box-sizing: content-box;
   width:60px;
   height:60px;
   line-height:30px;
