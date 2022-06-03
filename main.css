@@ -245,11 +245,13 @@ body,.main,.header-top-ul {
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
   left: 20% !important;
   right: auto;
+  top: 43% !important;
 }
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
   right: 20% !important;
   left: auto;
+  top: 43% !important;
 }
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
@@ -342,6 +344,65 @@ body,.main,.header-top-ul {
 
 /* slider arrow end */
 
+/* ticket-open */
+
+
+.ticket-open {
+  width: 1008px;
+  margin: 0 auto;
+  height: 350px;
+  overflow: hidden;
+  background-color: rgb(235, 235, 235);
+}
+
+.ticket-open-top {
+  height: 55px;
+  position: relative;
+}
+
+.ticket-open-top > span {
+  display: inline;
+}
+
+.ticket-open-1, .ticket-open-2 {
+  position: absolute;
+  color: black;
+}
+
+.ticket-open-1 {
+  right: 8%;
+}
+
+.ticket-open-2 {
+  right: 5%;
+}
+
+.ticket-open-top-span {
+  float: left;
+  color: black;
+}
+
+.ticket-swiper-container {
+  height: 200px;
+}
+
+.slick-slide > img {
+  width: 150px;
+  height: 200px;
+  margin: auto;
+}
+/* ticket-open-end */
+
+/* ranking */
+
+.ranking{
+  width: 1008px;
+  margin: auto;
+  height: 500px;
+}
+
+/* ranking end */
+
 /* main block end */
 
 /* footer */
@@ -363,7 +424,7 @@ body,.main,.header-top-ul {
 /* footer social-icons */
 .social-icons a
 {
-  box-sizing: content-box;
+  box-sizing: content-box ;
   width:60px;
   height:60px;
   line-height:30px;
