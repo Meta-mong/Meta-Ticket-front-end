@@ -458,6 +458,57 @@ body,.main,.header-top-ul {
 .ranking-div-top-right > ul > li > a:focus{  /* 임시로 해놓은거 ! */
   background-color: rgb(240, 240, 240);
 }
+
+.ranking-div-main {
+  height: 210px;
+  margin: 50px 40px 30px;
+  background-color: white;
+  display: flex;
+  position: relative;
+}
+
+.ranking-div-main-plus {
+  margin: 0;
+  position: absolute;
+  top: -47px;
+  right: 0px;
+}
+
+.fa-plus {
+  font-size: 40px;
+  color: black;
+  transform: scaleY(1);
+	transition: 0.4s ease-out;
+}
+
+.fa-plus:hover{
+  color: rgb(215, 158, 228);
+  transform: scaleY(-1);
+}
+
+.ranking1 {
+  position: absolute;
+}
+
+.ranking-div-main > div{
+  margin: auto 10px;
+}
+
+.ranking-div-main > div img{
+  display: block;
+}
+
+.ranking-div-main > div span {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.ranking-div-main > div > img {
+  width: 100%;
+  height: auto;
+}
 /* ranking end */
 
 /* main block end */
