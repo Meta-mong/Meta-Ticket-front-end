@@ -165,8 +165,20 @@
           </div>  
 
           <div class="ranking">
-            
-            <i class="fa-solid fa-trophy"></i>
+            <div class="ranking-div-top">
+              <div class="ranking-div-top-left">
+                <i class="fa-solid fa-trophy"></i>
+                <span class="ranking-span">Ranking</span>
+              </div>
+              <div class="ranking-div-top-right">
+                <ul>
+                  <li><a href="#none" onclick="genreClick()">콘서트</a></li>
+                  <li><a href="#none">뮤지컬/연극</a></li>
+                  <li><a href="#none">클래식</a></li>
+                  <li><a href="#none">전시/행사</a></li>
+                </ul>
+              </div>
+            </div>
             
           </div>
 
@@ -206,6 +218,11 @@
           slidesToScroll: 4
         });
       });
+    </script>
+    <script>
+      function genreClick() {
+
+      }
     </script>
 </body>
 </html>

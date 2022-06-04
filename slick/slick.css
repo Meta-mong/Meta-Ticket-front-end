@@ -90,6 +90,13 @@
 {
     display: block;
 }
+.slick-slide > span
+{
+    display: block;
+    text-align: center;
+    padding: 3px;
+    margin: 0 auto;
+}
 .slick-slide.slick-loading img
 {
     display: none;
