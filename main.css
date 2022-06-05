@@ -474,6 +474,10 @@ body,.main,.header-top-ul {
   right: 0px;
 }
 
+.fa-trophy {
+  color: rgb(243, 189, 52);
+}
+
 .fa-plus {
   font-size: 40px;
   color: black;
