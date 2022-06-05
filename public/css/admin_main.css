@@ -1,0 +1,33 @@
+.main p {
+  font-size: 28px;
+}
+
+.container .main .logo {
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+
+.container .main .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container .main .list {
+  display: flex;
+  justify-content: center;
+}
+
+.container .main .btn {
+  font-size: 23px;
+  background-color: rgba(221, 184, 229, 0.964);
+  color: whitesmoke;
+  margin: 10px;
+  border: 0;
+}
+
+.container .main .btn:hover {
+  background-color: rgb(215, 158, 228);
+  color: whitesmoke;
+}

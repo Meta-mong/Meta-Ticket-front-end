@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <script defer type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../public/css/admin.css">
+  <link rel="stylesheet" href="../public/css/admin_ticket.css">
+
+  <!-- js -->
+  <script defer src="../public/js/admin.js"></script>
+
+  <title>admin</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="list">
+      <button type="button" class="btn" onclick="move_ticket()">티켓관리</button>
+      <button type="button" class="btn" onclick="move_user()">회원관리</button>
+      <button type="button" class="btn" onclick="move_notice()">게시판관리</button>
+    </div>
+    <section>
+      <div class="main">
+        <div class="inner">
+          <div class="post">
+            <div class="preview">
+              <img
+                src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/04/20220421104124d8cc8af1-cbd9-44cc-9f8a-2641083f4847.jpg"
+                alt="">
+            </div>
+          </div>
+          <div class="text">
+            <div class="list1">
+              <table id="vertical-1">
+                <tr>
+                  <th>번호</th>
+                  <td>01</td>
+                </tr>
+                <tr>
+                  <th>담당자</th>
+                  <td>메타몽</td>
+                </tr>
+                <tr>
+                  <th>등록일</th>
+                  <td>2022.06.04</td>
+                </tr>
+              </table>
+            </div>
+            <div class="title">
+              <table id="vertical-1">
+                <tr>
+                  <th>제목</th>
+                  <td>웃는남자</td>
+                </tr>
+              </table>
+            </div>
+            <div class="list2">
+              <table id="vertical-1">
+                <tr>
+                  <th>응모기간</th>
+                  <td>2022.06.04</td>
+                </tr>
+                <tr>
+                  <th>장르</th>
+                  <td>뮤지컬</td>
+                </tr>
+              </table>
+            </div>
+            <div class="list3">
+              <table id="vertical-1">
+                <tr>
+                  <th>공연일시</th>
+                  <td>2022.06.10</td>
+                </tr>
+                <tr>
+                  <th>등급</th>
+                  <td>15세</td>
+                </tr>
+              </table>
+            </div>
+            <div class="list4">
+              <table id="vertical-1">
+                <tr>
+                  <th>공연장소</th>
+                  <td>세종문화회관 대극장</td>
+                </tr>
+                <tr>
+                  <th>가격</th>
+                  <td>150000</td>
+                </tr>
+              </table>
+            </div>
+            <div class="list5">
+              <table id="vertical-1">
+                <tr>
+                  <th>주최측</th>
+                  <td>(주)EMK뮤지컬컴퍼니</td>
+                </tr>
+                <tr>
+                  <th>좌석수</th>
+                  <td>150석</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="script">
+          <p>공연 스크립트</p>
+          <div class="content">부자들의 낙원은 가난한 자들의 지옥으로 세워진 것이다.</div>
+        </div>
+        <!-- <button type="button" class = "btn_toList" onclick = "move_ticket()">목록으로</button> -->
+        <button type="button" class="btn_modify" onclick="move_modifyticket()">수정</button>
+        <button type="button" class="btn_delete" onclick="">삭제</button>
+      </div>
+    </section>
+  </div>
+</body>
+<!-- javascript -->
+<script type="text/javascript">
+  function move_modifyticket() {
+    window.location.href = "./admin_modifyticket.html";
+  }
+</script>
+
+</html>
