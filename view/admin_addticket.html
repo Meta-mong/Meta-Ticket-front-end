@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <script defer type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../public/css/admin.css">
+  <link rel="stylesheet" href="../public/css/admin_ticket.css">
+
+  <!-- js -->
+  <script defer src="../public/js/admin.js"></script>
+
+  <title>admin</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="list">
+      <button type="button" class="btn" onclick="move_ticket()">티켓관리</button>
+      <button type="button" class="btn" onclick="move_user()">회원관리</button>
+      <button type="button" class="btn" onclick="move_notice()">게시판관리</button>
+    </div>
+    <section>
+      <div class="main">
+        <div class="inner">
+          <div class="post">
+            <div class="preview">
+              <img src="" alt="">
+            </div>
+            <input type="file" class="postImg" style="display: none;">
+            <button class="selectBt">사진 선택</button>
+          </div>
+          <div class="text">
+            <div class="title" style="margin-top: 20px;">
+              <table id="vertical-1">
+                <tr>
+                  <th>제목</th>
+                  <td><input type="text" placeholder=""></td>
+                </tr>
+              </table>
+            </div>
+            <div class="list2">
+              <table id="vertical-1">
+                <tr>
+                  <th>응모기간</th>
+                  <td><input type="text" placeholder=""></td>
+                </tr>
+                <tr>
+                  <th>장르</th>
+                  <td><input type="text" placeholder=""></td>
+                </tr>
+              </table>
+            </div>
+            <div class="list3">
+              <table id="vertical-1">
+                <tr>
+                  <th>공연일시</th>
+                  <td><input type="text" placeholder=""></td>
+                </tr>
+                <tr>
+                  <th>등급</th>
+                  <td><input type="text" placeholder=""></td>
+                </tr>
+              </table>
+            </div>
+            <div class="list4">
+              <table id="vertical-1">
+                <tr>
+                  <th>공연장소</th>
+                  <td><input type="text" placeholder=""></td>
+                </tr>
+                <tr>
+                  <th>가격</th>
+                  <td><input type="text" placeholder=""></td>
+                </tr>
+              </table>
+            </div>
+            <div class="list5">
+              <table id="vertical-1">
+                <tr>
+                  <th>주최측</th>
+                  <td><input type="text" placeholder=""></td>
+                </tr>
+                <tr>
+                  <th>좌석수</th>
+                  <td><input type="text" placeholder=""></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="script">
+          <p>공연 스크립트</p>
+          <textarea class="content" required="required"></textarea>
+        </div>
+        <button type="button" class="btn_submit" onclick="move_ticketDetail()">등록</button>
+      </div>
+    </section>
+  </div>
+</body>
+<!-- javascript -->
+<script type="text/javascript">
+  function move_ticketDetail() {
+    window.location.href = "./admin_ticketDetail.html";
+  }
+</script>
+
+</html>

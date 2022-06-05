@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../public/css/admin.css">
+  <link rel="stylesheet" href="../public/css/admin_board.css">
+
+  <!-- js -->
+  <script defer src="../public/js/admin.js"></script>
+
+  <title>admin</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="list">
+      <button type="button" class="btn" onclick="move_ticket()">티켓관리</button>
+      <button type="button" class="btn" onclick="move_user()">회원관리</button>
+      <button type="button" class="btn" onclick="move_notice()">게시판관리</button>
+    </div>
+    <section>
+      <div class="main">
+        <button type="button" class="btn" onclick="notice_list()">공지사항</button>
+        <button type="button" class="btn" onclick="qna_list()" style="background-color: gray;">QnA</button>
+        <div class="search">
+          <input type="text" placeholder="">
+          <button type="button" class="material-icons">search</button>
+        </div>
+        <table class="notice_list">
+          <tr>
+            <th>No</th>
+            <th>분류</th>
+            <th>제목</th>
+            <th>등록일</th>
+            <th>답변여부</th>
+          </tr>
+          <tr onclick="move_qnaDetail()">
+            <td>1</td>
+            <td>뭐하지</td>
+            <td>안녕하세요</td>
+            <td>2022.06.04</td>
+            <td>Y</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>뭐하지</td>
+            <td>공지합니다</td>
+            <td>2022.06.05</td>
+            <td>N</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </div>
+</body>
+<!-- javascript -->
+<script type="text/javascript">
+  function notice_list() {
+    window.location.href = "./admin_notice.html";
+  }
+</script>
+<!-- javascript -->
+<script type="text/javascript">
+  function qna_list() {
+    window.location.href = "./admin_qna.html";
+  }
+</script>
+</html>
