@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../public/css/admin.css">
+  <link rel="stylesheet" href="../public/css/admin_ticketmain.css">
+
+  <!-- js -->
+  <script defer src="../public/js/admin.js"></script>
+
+  <title>admin</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="list">
+      <button type="button" class="btn" onclick="move_ticket()">티켓관리</button>
+      <button type="button" class="btn" onclick="move_user()">회원관리</button>
+      <button type="button" class="btn" onclick="move_notice()">게시판관리</button>
+    </div>
+    <section>
+      <div class="main">
+        <button type="button" class="btn" onclick="add_ticket()">공연등록</button>
+        <div class="search">
+          <input type="text" placeholder="">
+          <button type="button" class="material-icons">search</button>
+        </div>
+        <table class="ticket_list">
+          <tr>
+            <th>번호</th>
+            <th>공연명</th>
+            <th>공연일자</th>
+            <th>장소</th>
+            <th>주최측</th>
+            <th>등록일</th>
+            <th>담당자</th>
+          </tr>
+          <tr onclick="move_ticketDetail()">
+            <td>1</td>
+            <td>웃는남자</td>
+            <td>2022.06.10</td>
+            <td>세종문화회관 대극장</td>
+            <td>(주)EMK뮤지컬컴퍼니</td>
+            <td>2022.06.04</td>
+            <td>메타몽</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>웃는남자</td>
+            <td>2022.06.10</td>
+            <td>세종문화회관 대극장</td>
+            <td>(주)EMK뮤지컬컴퍼니</td>
+            <td>2022.06.04</td>
+            <td>메타몽</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </div>
+</body>
+<!-- javascript -->
+<script type="text/javascript">
+  function add_ticket() {
+    window.location.href = "./admin_addticket.html";
+  }
+</script>
+
+<!-- javascript -->
+<script type="text/javascript">
+  function move_ticketDetail() {
+    window.location.href = "./admin_ticketDetail.html";
+  }
+</script>
+
+</html>
