@@ -74,7 +74,8 @@
   width: 100%;
 }
 
-.container .main .inner .list1 {
+.container .main .inner .list1,
+.container .main .inner .list4 {
   /* display: flex; */
   /* height : 50px;    */
   margin-bottom: 10px;
@@ -82,19 +83,22 @@
   border-collapse: collapse;
 }
 
-.container .main .inner .list1 table {
+.container .main .inner .list1 table,
+.container .main .inner .list4 table {
   table-layout: fixed;
   width: 700px;
   padding: 10px;
 }
 
-.container .main .inner .list1 tr {
+.container .main .inner .list1 tr,
+.container .main .inner .list4 tr {
   float: left;
   border: 1px solid lightgray;
 
 }
 
-.container .main .inner .list1 th {
+.container .main .inner .list1 th,
+.container .main .inner .list4 th {
   border-right: 1px solid lightgray;
   padding: 10px;
   width: 60px;
@@ -102,8 +106,9 @@
   vertical-align: middle;
 }
 
-.container .main .inner .list1 td {
-  width: 142px;
+.container .main .inner .list1 td,
+.container .main .inner .list4 td {
+  width: 138px;
   height: 30px;
   vertical-align: middle;
 }
@@ -130,7 +135,7 @@
 }
 
 .container .main .title td {
-  width: 587px;
+  width: 580px;
   height: 30px;
   vertical-align: middle;
 }
@@ -144,17 +149,16 @@
 
 .container .main .inner .list2,
 .container .main .inner .list3,
-.container .main .inner .list3,
 .container .main .inner .list5 {
   /* display: flex; */
   /* height : 50px;    */
+  margin-bottom: 10px;
   font-size: 16px;
   border-collapse: collapse;
 }
 
 .container .main .inner .list2 table,
 .container .main .inner .list3 table,
-.container .main .inner .list4 table,
 .container .main .inner .list5 table {
   table-layout: fixed;
   width: 700px;
@@ -162,7 +166,6 @@
 
 .container .main .inner .list2 tr,
 .container .main .inner .list3 tr,
-.container .main .inner .list4 tr,
 .container .main .inner .list5 tr {
   float: left;
   border: 1px solid lightgray;
@@ -170,7 +173,6 @@
 
 .container .main .inner .list2 th,
 .container .main .inner .list3 th,
-.container .main .inner .list4 th,
 .container .main .inner .list5 th {
   border-right: 1px solid lightgray;
   padding: 10px;
@@ -181,7 +183,6 @@
 
 .container .main .inner .list2 td,
 .container .main .inner .list3 td,
-.container .main .inner .list4 td,
 .container .main .inner .list5 td {
   width: 237px;
   height: 30px;
@@ -190,10 +191,23 @@
 
 .container .main .inner .list2 td input,
 .container .main .inner .list3 td input,
-.container .main .inner .list4 td input,
 .container .main .inner .list5 td input {
   height: 40px;
   width: 237px;
+  border: 0;
+  background-color: whitesmoke;
+}
+
+.container .main .inner .list4 td input{
+  height: 40px;
+  width: 110px;
+  border: 0;
+  background-color: whitesmoke;
+}
+
+.container .main .inner .list4 .genre{
+  width: 130px;
+  height: 40px;
   border: 0;
   background-color: whitesmoke;
 }
