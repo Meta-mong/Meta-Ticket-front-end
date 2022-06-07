@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
     let scrollToTop = dm.scrollTop;
 
     if (documentHeight != 0){
-        const actionHeight = documentHeight / 2;
+        const actionHeight = documentHeight / 4;
 
         if(scrollToTop > actionHeight) {
             topButton.style.display = 'block';
