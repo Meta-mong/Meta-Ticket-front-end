@@ -522,6 +522,51 @@ body,.main,.header-top-ul {
 .footer {
     background-color: rgba(221, 184, 229, 0.964);
     padding-bottom: 20px;
+    position: relative;
+}
+
+.back-to-top {
+    width: 88px;
+    height: 60px;
+    position: fixed;
+    top: 50%;
+    right: 10%;
+}
+
+.to-top{
+  text-align:center;
+	font-size:120%;
+	font-family: Calibri, arial, sans-serif;
+	color:rgb(152, 152, 152);
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:rgb(152, 152, 152);
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em rgb(152, 152, 152);
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+  box-sizing: content-box;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:pink;
+	border-color:pink;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
 }
 
 .footer-div {
