@@ -64,12 +64,12 @@
             <div class="list2">
               <table id="vertical-1">
                 <tr>
-                  <th>응모기간</th>
-                  <td><input type="text" placeholder=""></td>
+                  <th>응모시작날짜</th>
+                  <td><input type="date" placeholder=""></td>
                 </tr>
                 <tr>
-                  <th>장르</th>
-                  <td><input type="text" placeholder=""></td>
+                  <th>응모마감날짜</th>
+                  <td><input type="date" placeholder=""></td>
                 </tr>
               </table>
             </div>
@@ -77,10 +77,10 @@
               <table id="vertical-1">
                 <tr>
                   <th>공연일시</th>
-                  <td><input type="text" placeholder=""></td>
+                  <td><input type="date" placeholder=""></td>
                 </tr>
                 <tr>
-                  <th>등급</th>
+                  <th>공연장소</th>
                   <td><input type="text" placeholder=""></td>
                 </tr>
               </table>
@@ -88,11 +88,23 @@
             <div class="list4">
               <table id="vertical-1">
                 <tr>
-                  <th>공연장소</th>
+                  <th>장르</th>
+                  <td>
+                  <select name="genre" id = "genre" name = "genre" required="required" >
+                  <option value="">=== 선택 ===</option>
+                  <option value="콘서트">콘서트</option>
+                  <option value="뮤지컬/연극">뮤지컬/연극</option>
+                  <option value="클래식">클래식</option>
+                  <option value="전시/행사">전시/행사</option>
+                  </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>등급</th>
                   <td><input type="text" placeholder=""></td>
                 </tr>
                 <tr>
-                  <th>가격</th>
+                  <th>좌석수</th>
                   <td><input type="text" placeholder=""></td>
                 </tr>
               </table>
@@ -104,7 +116,7 @@
                   <td><input type="text" placeholder=""></td>
                 </tr>
                 <tr>
-                  <th>좌석수</th>
+                  <th>가격</th>
                   <td><input type="text" placeholder=""></td>
                 </tr>
               </table>
