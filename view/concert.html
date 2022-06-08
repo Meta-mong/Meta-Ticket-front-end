@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- css -->
-    <link rel = "stylesheet" href="/public/css/concert.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
-    <title>Concert</title>
+  <!-- css -->
+  <link rel="stylesheet" href="/public/css/concert.css">
+
+  <!-- js -->
+  <script defer src="../public/js/concert.js"></script>
+
+  <title>Concert</title>
 </head>
+
 <body>
   <div class="main">
     <div class="header">
@@ -30,8 +39,8 @@
         <div class="header-center">
             <div class="header-center-left">
               <a href="#">
-                <img src="../img/metamong.png" alt="Meta" style="width: 70px; height:70px;">
-                <h1 class="header-center-left-h1">Meta 티켓</h1>
+                <img src="img/metaticket_logo.png" alt="Meta" style="max-width: 100%; height:90px;">
+                <!-- <h1 class="header-center-left-h1">Meta 티켓</h1> -->
               </a>  
             </div>
             <div class="header-center-right">
@@ -77,100 +86,137 @@
     </div>
 
     <div class="container" style="min-height: 100vh;">
-      <div class="concert-genre">
+      <!-- <div class="concert-genre">
         콘서트
-      </div>
+      </div> -->
 
       <section class="concert">
+        <div class="concertSwiper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="http://image.toast.com/aaaaab/ticketlink/TKL_7/990X280_%EC%9D%B4-%EA%B5%AC%EC%97%AD%EC%9D%98-%EC%9D%B4%EA%B8%B0%EC%A0%81%EC%9D%B8-X.jpg"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="http://image.toast.com/aaaaab/ticketlink/TKL_9/990x280_%ED%95%9C%EB%BC%98%EC%82%AC%EC%9D%B4.jpg"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="http://image.toast.com/aaaaab/ticketlink/TKL_4/%EC%97%B0%EA%B7%B9_%EC%89%AC%EC%96%B4%EB%A7%A4%EB%93%9C%EB%8B%88%EC%8A%A4_01_%EB%A9%94%EC%9D%B8%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C_990x280.jpg"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="http://image.toast.com/aaaaab/ticketlink/TKL_7/%EA%B3%B5%EC%97%B0%EC%A0%84%EC%8B%9C_%EB%A9%94%EC%9D%B8_990x280_%EB%9D%BC%EB%A9%B4(1).jpg"
+                  alt="">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="concert-posting">
           <div class="inner">
             <div class="fnConcertDescription" onclick="">
               <div class="concert-img">
-                <figure class="image"><img src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png" alt=""></figure>
-              </div>  
+                <figure class="image"><img
+                    src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png"
+                    alt=""></figure>
+              </div>
               <div class="concert-content">
                 <h5 name="title">title</h5>
                 <h5 name="period">period</h5>
-                <h5 name="location">location</h5>  
+                <h5 name="location">location</h5>
               </div>
-            </div> 
+            </div>
           </div>
           <div class="inner">
             <div class="fnConcertDescription" onclick="">
               <div class="concert-img">
-                <figure class="image"><img src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png" alt=""></figure>
-              </div>  
+                <figure class="image"><img
+                    src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png"
+                    alt=""></figure>
+              </div>
               <div class="concert-content">
                 <h5 name="title">title</h5>
                 <h5 name="period">period</h5>
-                <h5 name="location">location</h5>  
+                <h5 name="location">location</h5>
               </div>
-            </div> 
+            </div>
           </div>
           <div class="inner">
             <div class="fnConcertDescription" onclick="">
               <div class="concert-img">
-                <figure class="image"><img src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png" alt=""></figure>
-              </div>  
+                <figure class="image"><img
+                    src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png"
+                    alt=""></figure>
+              </div>
               <div class="concert-content">
                 <h5 name="title">title</h5>
                 <h5 name="period">period</h5>
-                <h5 name="location">location</h5>  
+                <h5 name="location">location</h5>
               </div>
-            </div> 
+            </div>
           </div>
           <div class="inner">
             <div class="fnConcertDescription" onclick="">
               <div class="concert-img">
-                <figure class="image"><img src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png" alt=""></figure>
-              </div>  
+                <figure class="image"><img
+                    src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png"
+                    alt=""></figure>
+              </div>
               <div class="concert-content">
                 <h5 name="title">title</h5>
                 <h5 name="period">period</h5>
-                <h5 name="location">location</h5>  
+                <h5 name="location">location</h5>
               </div>
-            </div> 
+            </div>
           </div>
           <div class="inner">
             <div class="fnConcertDescription" onclick="">
               <div class="concert-img">
-                <figure class="image"><img src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png" alt=""></figure>
-              </div>  
+                <figure class="image"><img
+                    src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/05/2022051018075993e0eb61-ea50-4079-afc2-e3203ebcf6f9.png"
+                    alt=""></figure>
+              </div>
               <div class="concert-content">
                 <h5 name="title">title</h5>
                 <h5 name="period">period</h5>
-                <h5 name="location">location</h5>  
+                <h5 name="location">location</h5>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
 
-        
-        
-      </section>  
+
+
+      </section>
 
     </div>
 
     <!-- footer -->
     <div class="footer">
-        <div class="footer-div">
-          <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-github"></i></a></li>   
-          </ul>
-          </div>
-      
-          <!-- Copyright -->
-          <div class="footer-copyright">
-            <img src="../img/metamong.png" alt="Meta" style="width: 50px; height:50px;">
-            <span>㈜ Meta-Mong 서울특별시 종로구 종로33길 15</span>
-            <span>사업자등록번호 : 123-54-4245 전화 : 02-134-5123 팩스 : 02-895-2940</span>
-            <span>© 2022 Copyright: Meta-Mong ALL RIGHTS RESERVED.</span>
-          </div>
-          <!-- Copyright -->
+      <div class="footer-div">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <img src="../img/metamong.png" alt="Meta" style="width: 50px; height:50px;">
+        <span>㈜ Meta-Mong 서울특별시 종로구 종로33길 15</span>
+        <span>사업자등록번호 : 123-54-4245 전화 : 02-134-5123 팩스 : 02-895-2940</span>
+        <span>© 2022 Copyright: Meta-Mong ALL RIGHTS RESERVED.</span>
+      </div>
+      <!-- Copyright -->
     </div>
-  </div>    
+  </div>
 </body>
+
 </html>
