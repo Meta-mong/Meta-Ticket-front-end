@@ -526,11 +526,13 @@ body,.main,.header-top-ul {
 }
 
 .back-to-top {
-    width: 88px;
-    height: 60px;
-    position: fixed;
-    top: 50%;
-    right: 5%;
+  margin-left: 600px;
+  display: none;
+  width: 88px;
+  height: 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
 }
 
 .to-top{
