@@ -238,8 +238,8 @@
   width: 100px;
   margin: 20px;
   margin-right: -800px;
-  border: 2px solid rgb(215, 158, 228);
-  background-color: #fff;
+  background-color: rgb(186,133,236);
+  border: none;
   font-weight: 700;
   cursor: pointer;
 }
@@ -249,8 +249,8 @@
   height: 45px;
   width: 100px;
   margin-top: 20px;
-  border: 2px solid rgb(215, 158, 228);
-  background-color: #fff;
+  background-color: rgb(186,133,236);
+  border: none;
   font-weight: 700;
   cursor: pointer;
 }
@@ -258,10 +258,20 @@
 .container .main .btn_delete {
   height: 45px;
   width: 100px;
-  margin: 20px;
-  margin-right: -700px;
-  border: 2px solid rgb(215, 158, 228);
-  background-color: #fff;
+  margin-top: 20px;
+  margin-right: -670px;
+  background-color: rgb(186,133,236);
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* 목록으로 버튼 */
+.container .main .btn_list{
+  height: 45px;
+  width: 100px;
+  background-color: rgb(218,186,248);
+  border: none;
   font-weight: 700;
   cursor: pointer;
 }

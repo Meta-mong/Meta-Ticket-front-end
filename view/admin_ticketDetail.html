@@ -31,10 +31,10 @@
         <div class="inner">
           <div class="post">
             <div class="preview">
-              <img
-                src="https://cdnticket.melon.co.kr/resource/image/upload/marketing/2022/04/20220421104124d8cc8af1-cbd9-44cc-9f8a-2641083f4847.jpg"
-                alt="">
+              <img src="" alt="">
             </div>
+            <input type="file" class="postImg" style="display: none;">
+            <button class="selectBt">사진 선택</button>
           </div>
           <div class="text">
             <div class="list1">
@@ -57,7 +57,7 @@
               <table id="vertical-1">
                 <tr>
                   <th>제목</th>
-                  <td>웃는남자</td>
+                  <td><input type="text" placeholder=""></td>
                 </tr>
               </table>
             </div>
@@ -65,11 +65,11 @@
               <table id="vertical-1">
                 <tr>
                   <th>응모시작날짜</th>
-                  <td>2022.06.04</td>
+                  <td><input type="date" placeholder=""></td>
                 </tr>
                 <tr>
                   <th>응모마감날짜</th>
-                  <td>2022.06.05</td>
+                  <td><input type="date" placeholder=""></td>
                 </tr>
               </table>
             </div>
@@ -77,11 +77,11 @@
               <table id="vertical-1">
                 <tr>
                   <th>공연일시</th>
-                  <td>2022.06.10</td>
+                  <td><input type="date" placeholder=""></td>
                 </tr>
                 <tr>
                   <th>공연장소</th>
-                  <td>세종문화회관 대극장</td>
+                  <td><input type="text" placeholder=""></td>
                 </tr>
               </table>
             </div>
@@ -89,15 +89,23 @@
               <table id="vertical-1">
                 <tr>
                   <th>장르</th>
-                  <td>뮤지컬/연극</td>
+                  <td>
+                  <select name="genre" id = "genre" name = "genre" required="required" >
+                  <option value="">=== 선택 ===</option>
+                  <option value="콘서트">콘서트</option>
+                  <option value="뮤지컬/연극">뮤지컬/연극</option>
+                  <option value="클래식">클래식</option>
+                  <option value="전시/행사">전시/행사</option>
+                  </select>
+                  </td>
                 </tr>
                 <tr>
                   <th>등급</th>
-                  <td>15세</td>
+                  <td><input type="text" placeholder=""></td>
                 </tr>
                 <tr>
                   <th>좌석수</th>
-                  <td>150석</td>
+                  <td><input type="text" placeholder=""></td>
                 </tr>
               </table>
             </div>
@@ -105,11 +113,11 @@
               <table id="vertical-1">
                 <tr>
                   <th>주최측</th>
-                  <td>(주)EMK뮤지컬컴퍼니</td>
+                  <td><input type="text" placeholder=""></td>
                 </tr>
                 <tr>
                   <th>가격</th>
-                  <td>150000</td>
+                  <td><input type="text" placeholder=""></td>
                 </tr>
               </table>
             </div>
@@ -117,19 +125,33 @@
         </div>
         <div class="script">
           <p>공연 스크립트</p>
-          <div class="content">부자들의 낙원은 가난한 자들의 지옥으로 세워진 것이다.</div>
+          <textarea class="content" required="required"></textarea>
         </div>
-        <!-- <button type="button" class = "btn_toList" onclick = "move_ticket()">목록으로</button> -->
-        <button type="button" class="btn_modify" onclick="move_modifyticket()">수정</button>
-        <button type="button" class="btn_delete" onclick="">삭제</button>
+        <button type="button" class="btn_list" onclick="move_ticketList()">목록으로</button>
+        <button type="button" class="btn_modify" onclick="ticket_modify()">수정</button>
+        <button type="button" class="btn_delete" onclick="ticket_delete()">삭제</button>
       </div>
     </section>
   </div>
 </body>
 <!-- javascript -->
 <script type="text/javascript">
-  function move_modifyticket() {
-    window.location.href = "./admin_modifyticket.html";
+  function move_ticketList() {
+    window.location.href = "./admin_ticket.html";
+  }
+</script>
+
+<!-- javascript -->
+<script type="text/javascript">
+  function ticket_modify() {
+    window.location.href = "./admin_ticket.html";
+  }
+</script>
+
+<!-- javascript -->
+<script type="text/javascript">
+  function ticket_delete() {
+    window.location.href = "./admin_ticket.html";
   }
 </script>
 
