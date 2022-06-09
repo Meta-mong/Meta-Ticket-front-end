@@ -4,9 +4,12 @@ a {
 
 .main{
   min-width: 1400px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-body,.main,.header-top-ul {
+body,.header-top-ul {
     margin: 0;
     padding: 0;
 }
@@ -486,6 +489,89 @@ body,.main,.header-top-ul {
   height: auto;
 }
 /* ranking end */
+
+/* ticket-pick */
+.ticket-pick{
+  width: 1008px;
+  margin: 60px auto;
+
+}
+
+.ticket-pick-top {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 2;
+  margin: 30px 0;
+}
+
+.fa-hand-holding-heart {
+  color: rgb(255, 196, 35);
+}
+
+.ticket-pick-main-top {
+  margin-bottom: 30px;
+}
+.ticket-pick-main-top > ul {
+  display: flex;
+  margin: 0;
+  height: 80px;
+  align-items: center;
+  padding: 0;
+}
+
+.ticket-pick-main-top > ul > li {
+  list-style: none;
+  height: 100%;
+  text-align: center;
+  width: 25%;
+  line-height: 5.3;
+}
+
+.ticket-pick-main-top > ul > li > a {
+  text-decoration: none;
+  padding: 20px 40px;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 3;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+}
+
+.ticket-pick-main-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ticket-pick-main-body > div > img, .ticket-pick-main-body > div > span{
+  display: block;
+}
+
+.ticket-pick-main-body > div > span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ticket-pick-main-body > div {
+  width: 23%;
+  margin: 10px;
+  border: 1px solid rgb(240,240,240);
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+.ticket-pick-main-body > div:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+.ticket-pick-main-body > div > img{
+  width: 100%;
+  height: auto;
+}
+/* ticket-pick end */
 
 /* main block end */
 
