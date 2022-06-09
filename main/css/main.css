@@ -60,7 +60,7 @@ body,.main,.header-top-ul {
 }
 
 .header-center-left {
-    margin-left: 100px;
+    margin-left: 15%;
 }
 
 .header-center-left-h1 {
@@ -70,7 +70,7 @@ body,.main,.header-top-ul {
 }
 
 .header-center-right {
-    margin-right: 150px;
+    margin-right: 20%;
 }
 
 /* header search */
@@ -230,42 +230,8 @@ body,.main,.header-top-ul {
 
 /* main block */
 
-/* slider */
-.swiper-container {
-  overflow: hidden;
-  margin: 40px 0;
-  position: relative;
-}
+/* slider (move to slider.css)*/
 
-.swiper-slide > img {
-  width: 200px;
-  height: 300px;
-}
-
-:root {
-  --swiper-navigation-size: white !important;
-  --swiper-theme-color: none !important;
-}
-
-.swiper-button-prev, .swiper-rtl .swiper-button-next{
-  left: 20% !important;
-  right: auto;
-  top: 20% !important;
-}
-
-.swiper-button-next, .swiper-rtl .swiper-button-prev{
-  right: 20% !important;
-  left: auto;
-  top: 20% !important;
-}
-
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  content: none !important;
-}
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
-  content: none !important;
-}
 
 /* slider arrow */
 *, *:before, *:after {

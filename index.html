@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>메인 페이지</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main/css/main.css">
+    <link rel="stylesheet" href="main/css/slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -64,10 +65,10 @@
             <div class="header-bottom">
                 <ul class="header-bottom-ul">
                     <li><span><a href="#">홈</a></span></li>
-                    <li><span><a href="#">콘서트</a></span></li>
-                    <li><span><a href="#">뮤지컬/연극</a></span></li>
-                    <li><span><a href="#">클래식</a></span></li>
-                    <li><span><a href="#">전시/행사</a></span></li>
+                    <li><span><a href="view/concert.html">콘서트</a></span></li>
+                    <li><span><a href="view/concert.html">뮤지컬/연극</a></span></li>
+                    <li><span><a href="view/concert.html">클래식</a></span></li>
+                    <li><span><a href="view/concert.html">전시/행사</a></span></li>
                     <li><span><a href="#">티켓오픈소식</a></span></li>
                     <li><span><a href="#">랭킹</a></span></li>
                 </ul>
@@ -268,12 +269,12 @@
     </div>
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="slider.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="ticketOpenPage.js"></script>
-    <script src="backToTop.js"></script>
+    <script src="main/js/slider.js"></script>
+    <script src="main/js/ticketOpenPage.js"></script>
+    <script src="main/js/backToTop.js"></script>
     <script>
       $(document).ready(function(){
         $('.multiple-items').slick({
