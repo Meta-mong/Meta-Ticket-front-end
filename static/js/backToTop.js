@@ -25,6 +25,7 @@ topButton.addEventListener('click', function (e) {
 function scrollUp() {
     let upper = setInterval(function () {
         if (dm.scrollTop != 0) {
+            console.log(dm.scrollTop);
             window.scrollBy(0, -55);
         }else {
             clearInterval(upper);
