@@ -275,3 +275,10 @@
   font-weight: 700;
   cursor: pointer;
 }
+
+.container .main .btn_submit:hover,
+.container .main .btn_modify:hover,
+.container .main .btn_delete:hover,
+.container .main .btn_list:hover {
+  background-color: blueviolet;
+}
