@@ -234,6 +234,8 @@ body,.header-top-ul {
     opacity: 0.9;
     color: white;
 }
+
+
 /* header end*/
 
 /* main block */
@@ -559,18 +561,31 @@ body,.header-top-ul {
   margin: 10px;
   border: 1px solid rgb(240,240,240);
   border-radius: 5px;
-  transition-duration: 0.5s;
 }
 
-.ticket-pick-main-body > div:hover{
+/* .ticket-pick-main-body > div:hover{
   transform: scale(1.1);
   box-shadow: 1px 1px 1px 1px gray;
-}
+} */
 
 .ticket-pick-main-body > div > img{
   width: 100%;
   height: auto;
 }
+
+.card {
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  background: rgba(226, 226, 226, 0.5);
+  backdrop-filter: blur(20px);
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+  width: 25%;
+}
+
 /* ticket-pick end */
 
 /* main block end */
