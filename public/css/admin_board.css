@@ -48,6 +48,27 @@
   color: whitesmoke;
 }
 
+.container .main .btn_submit {
+  display: block;
+  justify-content: left;
+  float: left;
+  text-align: center;
+  height: 40px;
+  width : 104px;
+  font-size: 23px;
+  background-color: rgb(218,186,248);
+  color: whitesmoke;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  border: 0;
+}
+
+.container .main .btn_submit:hover {
+  background-color: rgb(186,133,236);
+  color: whitesmoke;
+}
+
 
 .container .main .search {
   float: right;
