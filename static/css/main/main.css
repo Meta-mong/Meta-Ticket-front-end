@@ -380,7 +380,7 @@ body,.header-top-ul {
 /* ticket-open-end */
 
 /* ranking */
-
+/* 
 .ranking{
   width: 1008px;
   margin: 60px auto;
@@ -436,8 +436,8 @@ body,.header-top-ul {
 }
 
 .ranking-div-top-right > ul > li > a:focus{  /* 임시로 해놓은거 ! */
-  background-color: rgb(240, 240, 240);
-}
+  /* background-color: rgb(240, 240, 240);
+} */
 
 .ranking-div-main {
   height: 210px;
@@ -492,7 +492,7 @@ body,.header-top-ul {
 .ranking-div-main > div > img {
   width: 100%;
   height: auto;
-}
+} */
 /* ranking end */
 
 /* ticket-pick */
